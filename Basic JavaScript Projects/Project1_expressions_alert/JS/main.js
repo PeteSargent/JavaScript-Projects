@@ -7,3 +7,8 @@ var Sent2 = " and this is the end of the string.";  //Assigned Sent2 secnd half 
 
 document.write(Sent1 + Sent2); //Expression that concatonates Sent1 and Sent2.
 window.alert("Here goes my first JS"); //Alert pop-up with message.
+
+function My_Mousover_Message() {
+    var str = "Hopefully this text is showing now you\'ve hovered.";
+    document.getElementById("para1").innerHTML = str;
+}
