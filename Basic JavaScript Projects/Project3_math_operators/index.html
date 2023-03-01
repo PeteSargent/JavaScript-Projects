@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Author" content="Peter Sargent">
+    <title>Project3_math_operators</title>
+    <script src="./JS/main.js"></script>
+</head>
+
+<body>
+    <p id="Math" onclick="addition_Function()">Click Here to add 2 + 2</p>
+    <p id="Subtract" onclick="subtraction_Func()">Click here to subtract 5 - 2</p>
+    <p id="Multiply" onclick="multiplication()">Click here to multiply 6 by 8</p>
+    <p id="Divide" onclick="division()">Click here to divide 48 by 6</p>
+    <p id="multi_Math" onclick="multiple_Operators()">Click here to perform multiple math operations at once.</p>
+    <p id="Modulus" onclick="modulus_Operator()">Click here to get the remainder of 25 / 6</p>
+    <p id="Unary" onclick="negation_Operator()">Click here to see the negation of -10</p>
+    <p id="Increment" onclick="increment_Func()">Click to see the incrementation of 8</p>
+    <p id="Decrement" onclick="decrement_Func()">Click to see the decrementation of 8</p>
+    <p id="Roundup"></p>
+    <script>document.getElementById("Roundup").innerHTML = "Here is 10.75 rounded up:" + Math.round(10.75);</script> <!--Utilization of round method for the Math function-->
+</body>
+
+</html>
