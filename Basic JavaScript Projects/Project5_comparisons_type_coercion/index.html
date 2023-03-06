@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="Author" content="Peter Sargent">
+        <meta title="Type Coercion">
+        <script src="./JS/main.js"></script>
+    </head>
+
+    <body>
+        <h1>Click on each paragraph.</h1>
+        <p id="test" onclick="myFuction()">Hi. Click Me to divide 0/0.</p>                                          <!---->
+        <p id="test2" onclick="isNaNtrue()">This isn't a Number, click me to see I'm right.</p>                     <!---->
+        <p id="test3" onclick="isNaNfalse()">This isn't a Number, click me to see I'm wrong.</p>                    <!---->
+        <p id="Infinity" onclick="infinity()">Click here to realize Infinity.</p>                                   <!---->
+        <p id="negativeInfinity" onclick="negativeInfinity()">Click here to realize Infinity, BUT IN REVERSE!</p>   <!---->
+        <p id="trueFalse" onclick="trueFalseDisplay()">Click here to see a demonstration of Boolean Logic.</p>      <!---->
+        <p id="doubleEqualTrue" onclick="equalEqualCompare1()">10 == 5 + 5</p>                                      <!---->
+        <p id="doubleEqualFalse" onclick="equalEqualCompare2()">10 == 5</p>                                         <!---->
+        <p id="tripleEqualTrue" onclick="tripleEqualTrue()">1. Same Type Same Value X === Y</p>                     <!---->
+        <p id="tripleEqualFalse" onclick="tripleEqualFalse()">2. Different Type Different Value X === Y</p>         <!---->
+        <p id="sameValDifType" onclick="sameValDifType()">3. Different Type Same Value X === Y</p>                  <!---->
+        <p id="sameTypeDifVal" onclick="sameTypeDifVal()">4. Same Type Different Value X === Y</p>                  <!---->
+        <p id="showAndTrue" onclick="showAndTrue()">5 > 2 && 4 < 10</p>                                             <!---->
+        <p id="showAndFalse" onclick="showAndFalse()">6 > 8 && 5 < 10</p>                                           <!---->
+        <p id="showOrTrue" onclick="showOrTrue()">6 > 8 || 5 < 10</p>                                               <!---->
+        <p id="showOrFalse" onclick="showOrFalse()">3 > 9 || 2 > 12</p>                                             <!---->
+        <p id="notTrue" onclick="notTrue()">!(5 > 10)</p>                                                           <!---->
+        <p id="notFalse" onclick="notFalse()">!(100 > 50)</p>                                                       <!---->
+    </body>
+</html>
