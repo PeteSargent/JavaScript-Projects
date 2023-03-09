@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="Author" content="Peter Sargent">
+        <meta title="Project 7">
+        <script src="./JS/main.js"></script>
+    </head>
+
+    <body>
+        <p id="goodFunc" onclick="localVar()">Here's a simple function using a global and local variable that adds 10 and 20 together. Click to see.</p>
+        <br>
+        <p id="badFunc" onclick="brokenFunc()">Here's a function trying to use the variable from the above function. Click to make it fail, then check the console.
+        Unless you've activated the function via the JavaScript, in which case the error should already be there.</p>
+        <br>
+        <p id="dateMethod" onclick="get_Date()">Click to receive greeting.</p>
+        <br>
+        <p>Please enter your password. See the main.js for the password.</p>
+        <input id="Password" value=""/>
+        <button onclick="password_Function()">Click here</button>
+        <p id="Accessed"></p>
+        <br>
+        <p>You arrive at a great stone door with an erie red glow to it. It asks you a question:</p>
+        <p id="Para">
+            "What is the color of Night?"
+            <br>
+            Options:
+            <br>1. Black.
+            <br>2. Sanguine, my brother.
+            <br>3. [Say nothing and back away.]
+            <br>Choose a number.
+        </p>
+        <input id="paraInput" value="">
+        <button id="ParaButton" onclick="dark_Brotherhood_Door()">Answer</button>
+        <br>
+        <p id="Time_of_day"></p>
+        <button onclick="Time_function()">Click here to get the time</button>
+        
+        </body>
+</html>
