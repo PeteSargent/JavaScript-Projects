@@ -26,3 +26,22 @@ function foodChoice() {
     }
     document.getElementById("output").innerHTML = food_Output
 }
+
+function getElClass() {
+    var A = document.getElementsByClassName("Statue");
+    A[2].innerHTML = "This statue needs repairs.";
+}
+
+{
+    let c = document.getElementById("canvas1");
+    let ctx = c.getContext("2d");
+    let grd = ctx.createLinearGradient(0, 0, 300, 300);
+    grd.addColorStop(0, "red");
+    grd.addColorStop(1, "blue");
+    ctx.strokeStyle = grd;
+    ctx.font = "30px Arial";
+    
+    ctx.strokeText("Hello World, I am in a Canvas Element!", 10, 50);
+
+    
+}
