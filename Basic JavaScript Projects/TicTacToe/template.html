@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Arrow Function</title>
+        <meta charset="UTF-8">
+        <meta name="Author" content="Peter Sargent">
+    </head>
+
+    <body>
+        <p id="Myst"></p>
+        <p id="favGame"></p>
+        <script>
+            var blah;
+            blah = (val) => "I like to play " + val +" in my spare time!";
+            document.getElementById("favGame").innerHTML = blah("The Game of Ur");
+            
+            function faveGame(){
+                return "Myst is one of my favorite games."
+            }
+            document.getElementById("Myst").innerHTML = faveGame()
+            
+        </script>
+        
+    </body>
+</html>
