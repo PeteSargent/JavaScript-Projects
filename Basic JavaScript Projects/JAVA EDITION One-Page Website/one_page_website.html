@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Cake Zone</title>
+		<link rel="stylesheet" href="./css/one_page_website.css">
+		<script src="./JS/one_page_website.js" defer></script>
+	</head>
+	
+	
+	
+	<body>
+		<!--NAVIGATION-->
+		<section>
+			<div>
+				<ul>
+					<li><a class="active" href="#home" id="link">HOME</a></li>
+					<li><a href="#gallery" id="link">GALLERY</a></li>
+					<li><a href="#videos" id="link">VIDEOS</a></li>
+					<li><a href="#contact" id="link">CONTACT</a></li>
+				</ul>
+			</div>
+		</section>
+		<!--End of Navigation-->
+		
+
+		<!-- HEADER -->
+		<header id="home">	
+			<div>
+				<div>
+					<div class="header">
+						<h1>Cake Zone<h1>
+						<p>Hello! This is where I collect and share various well-made confections.<p>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- END HEADER -->
+			<!-- GALLERY -->
+		<section>	
+			<div id="gallery">
+				<div>
+					<h2>Gallery: Here are some neat cakes I've come across.</h3>
+					<div class="row">
+						<!-- PHOTO-CONTAINER 1 -->
+						<div>
+							<div class="column">
+								<img src="./images/thumbnails/thumbnail_5.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+							</div>
+						</div>
+						<!-- END PHOTO-CONTAINER 1 -->
+						
+						<!-- PHOTO-CONTAINER 2 -->
+						<div>
+							<div class="column">
+								<img src="./images/thumbnails/thumbnail_2.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+							</div>
+						</div>
+						<!-- END PHOTO-CONTAINER 2 -->
+						
+						<!-- PHOTO-CONTAINER 3 -->
+						<div>
+							<div class="column">
+								<img src="./images/thumbnails/thumbnail_3.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+							</div>
+						</div>
+						<!-- END PHOTO-CONTAINER 3 -->
+						
+						<!-- PHOTO-CONTAINER 4 -->
+						<div>
+							<div class="column">
+								<img src="./images/thumbnails/thumbnail_4.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+							</div>
+						</div>
+						<!-- END PHOTO-CONTAINER 4 -->
+					
+					</div>
+				</div>
+			</div>
+		</section>	
+			<!-- END GALLERY -->
+		<!--The Modal/Lightbox-->
+		<div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+				<div class="mySlides">
+					<div class="numbertext">1 / 5</div>
+					<img src="images/thumbnails/thumb_5Wide.jpg" style="width:100%">
+				</div>
+				<div class="mySlides">
+					<div class="numbertext">2 / 5</div>
+					<img src="images/thumbnails/thumb_2Wide.jpg" style="width:100%">
+				</div>
+				<div class="mySlides">
+					<div class="numbertext">3 / 5</div>
+					<img src="images/thumbnails/thumb_3Wide.jpg" style="width:100%">
+				</div>
+				<div class="mySlides">
+					<div class="numbertext">4 / 5</div>
+					<img src="images/thumbnails/thumb_4Wide.jpg" style="width:100%">
+				</div>
+			
+		
+
+				<!--Next/previous controls-->
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+				<!--Caption Text-->
+				<div class="caption-container">
+					<p id="caption"></p>
+				</div>
+
+				<!--Thumbnail Image Controls-->
+				<div class="column">
+					<img class="demo" src="images/thumbnails/thumbnail_5.png" onclick="currentSlide(1)" alt="Lemony Cake">
+				</div>
+
+				<div class="column">
+					<img class="demo" src="images/thumbnails/thumbnail_2.png" onclick="currentSlide(2)" alt="22 Cake">
+				</div>
+
+				<div class="column">
+					<img class="demo" src="images/thumbnails/thumbnail_3.png" onclick="currentSlide(3)" alt="Confectionary Cakes">
+				</div>
+
+				<div class="column">
+					<img class="demo" src="images/thumbnails/thumbnail_4.png" onclick="currentSlide(4)" alt="Axolotl Cake">
+				</div>
+			</div>
+		</div>
+			<!-- VIDEOS -->
+		<section>	
+			<div id="videos">
+				<div>
+					<div>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/-p4EsoqHVEg" title="YouTube video player" frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/qNhh6lPORNs" title="YouTube video player" frameborder="0" 
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+					
+					</div>
+				</div>
+			</div>
+		</section>	
+			<!-- END VIDEOS -->
+			
+			<!-- CONTACT -->
+		<section>	
+			<div id="contact">
+				<div>
+					<div>
+						<div>
+							<h3>If you need to contact me:</h3>
+						</div>
+						<form action="" method="get">
+							First Name: <input type="text" name="first_name"><br>
+							Last Name:	<input type="text" name="last_name"><br>
+							Email:		<input type="text" name="email_address"><br>
+							Country:	<input type="text" name="country_name"><br>
+							Subject:	<input type="text" name="subject"><br>
+							<input type="submit" value="Submit">
+							
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>	
+			<!-- END CONTACT -->
+			
+			<!-- FOOTER -->
+		<footer>	
+			<div>
+				<div>
+					<div>
+					<p>(888) 888-888<br>
+					123 15th Pl NE, Anywhere, USA<br>
+					&copy; Peter Sargent 2023. All images belong to their respective posters from Reddit.com, found on the r/cake subreddit.
+					</div>
+				</div>
+			</div>
+		</footer>
+			<!-- END FOOTER -->
+		
+	
+	</body>
+
+</html>
