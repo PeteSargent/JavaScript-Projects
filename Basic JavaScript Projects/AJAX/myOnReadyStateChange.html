@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="Author" content="Peter">
+        <title>Calling all Objects</title>
+    </head>
+
+    <body>
+        <p>Click here to get response text:</p>
+        <div id="content">
+        <input type="button" value="click here" id="btn" onclick="request();">
+        </div>
+
+        <script>
+            var ajax = new XMLHttpRequest();
+            //Note: Change the below html to something that doesn't exist to see 404 response.
+            ajax.open('GET', 'myContent.html');
+            ajax.onreadystatechange = function(){
+                if(ajax.readyState == 4){
+                    document.getElementById('content').innerHTML = ajax.responseText;
+                }
+                if(ajax.status == 404){
+                    document.getElementById('content').innerHTML = ajax.responseText;
+                }
+            }
+            function request(){
+                ajax.send();
+                document.getElementById('btn').style.display = 'none'
+            }
+
+        </script>
+        
+    </body>
+</html>
