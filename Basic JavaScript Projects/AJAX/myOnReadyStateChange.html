@@ -13,9 +13,12 @@
         </div>
 
         <script>
+            //request object
             var ajax = new XMLHttpRequest();
+            //Open
             //Note: Change the below html to something that doesn't exist to see 404 response.
             ajax.open('GET', 'myContent.html');
+            //Call back. This one accommodates in the event the response returns a Not Found status.
             ajax.onreadystatechange = function(){
                 if(ajax.readyState == 4){
                     document.getElementById('content').innerHTML = ajax.responseText;
@@ -24,6 +27,7 @@
                     document.getElementById('content').innerHTML = ajax.responseText;
                 }
             }
+            //Call send function for when use presses button.
             function request(){
                 ajax.send();
                 document.getElementById('btn').style.display = 'none'
